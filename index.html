@@ -9,36 +9,96 @@
 </head>
 <body>
     <page class="page">
-        <header class="header welcome">
-            <div class="header__container">
-                <a href="#0" class="link">
-                    <img src="svg/noemi-logo.svg" alt="NOEMI" class="header__logo">
-                </a>
-                <span class="header__title">
-                    <h1>Блог о творчестве, спорте, и образе жизни</h1>
-                </span>
+        <header class="welcome">
+          <div class="welcome__container">
+            <div class="welcome__header">
+              <button class="menu" type="button"><a href="#0" class="visually-hidden">Меню</a>
+                <div class="menu__line"></div>
+                <div class="menu__line"></div>
+                <div class="menu__line"></div>
+              </button>
+              <a href="#0" class="link welcome__logo-link">
+                <img src="svg/noemi-logo.svg" alt="NOEMI" class="welcome__logo">
+              </a>
+              <ul class="list menu__list">
+                <li class="list-item menu-item">
+                  <a href="#0" class="link menu-link">Главная</a>
+                </li>
+                <li class="list-item menu-item">
+                  <a href="#0" class="link menu-link">Посты</a>
+                </li>
+                <li class="list-item menu-item">
+                  <a href="#0" class="link menu-link">Статьи</a>
+                </li>
+                <li class="list-item menu-item">
+                  <a href="#0" class="link menu-link">Теги</a>
+                </li>
+                <li class="list-item menu-item">
+                  <a href="#0" class="link menu-link">Темы</a>
+                </li>
+                <li class="list-item menu-item">
+                  <a href="#0" class="link menu-link">Контакты</a>
+                </li>
+              </ul>
             </div>
+            
+            <span class="welcome__title">
+              <h1>Блог о творчестве, спорте, и образе жизни</h1>
+            </span>
+          </div>
+
         </header>
 
-        <div class="page-content">
-            
-            <section class="trends">
-                <header class="__header"><h2>Сейчас в тренде</h2></header>
-                <div class="container">
-                    <div class="trend">
-                        <div class="trend__content">
-                            <ul class="trend__tags">
-                                <li class="trend__tag"><a href="#0" class="link tag-link">Lifestyle</a></li>
-                                <li class="trend__tag"><a href="#0" class="link tag-link">Interior</a></li>
-                            </ul>
-                            <header class="trend__header">
-                                <a href="#0" class="link trend__header-link"><h2>Сейчас в тренде: Сад на подоконнике</h2></a>
-                            </header>
-                        </div>
-                    </div>
+        <aside class="trends">
+          <header class="__header page__header"><h2>Сейчас в тренде</h2></header>
+          <div class="trends__container">
+              <article class="trend trend__windowstool">
+                  <div class="trend__content">
+                      <ul class="trend__tags">
+                          <li class="trend__tag"><a href="#0" class="link tag-link">Lifestyle</a></li>
+                          <li class="trend__tag"><a href="#0" class="link tag-link">Interior</a></li>
+                      </ul>
+                      <header class="trend__header">
+                          <a href="#0" class="link trend__header-link"><h2>Сейчас в тренде: Сад на подоконнике</h2></a>
+                      </header>
+                  </div>
+              </article>
+              <article class="trend trend__cheese">
+                  <div class="trend__content">
+                      <ul class="trend__tags">
+                          <li class="trend__tag"><a href="#0" class="link tag-link">Food</a></li>
+                      </ul>
+                      <header class="trend__header">
+                          <a href="#0" class="link trend__header-link"><h2>Сыры на красивых картинках из интернета: Какие они на вкус?</h2></a>
+                      </header>
+                  </div>
+              </article>
+              <article class="trend trend__mountain">
+                <div class="trend__content">
+                    <ul class="trend__tags">
+                        <li class="trend__tag"><a href="#0" class="link tag-link">Lifestyle</a></li>
+                        <li class="trend__tag"><a href="#0" class="link tag-link">Travel</a></li>
+                    </ul>
+                    <header class="trend__header">
+                        <a href="#0" class="link trend__header-link"><h2>Собираемся в первый поход в горы</h2></a>
+                    </header>
                 </div>
-            </section>
+              </article>
+              <article class="trend trend__lemon">
+                <div class="trend__content">
+                  <ul class="trend__tags">
+                      <li class="trend__tag"><a href="#0" class="link tag-link">Food</a></li>
+                      <li class="trend__tag"><a href="#0" class="link tag-link">Health</a></li>
+                  </ul>
+                  <header class="trend__header">
+                      <a href="#0" class="link trend__header-link"><h2>Сейчас в тренде: Сколько витамина C в лимонах?</h2></a>
+                  </header>
+                </div>
+              </article>
+          </div>
+        </aside>
 
+        <div class="page__content">
             <main class="main">
               <acticle class="article">
                 <img src="img/last-post1.jpg" alt="Man is walking on the beach" class="img article__img">
@@ -56,9 +116,7 @@
                   </div>
                   <span class="article__text">Итак, вы в Питере. Раннее утро. Лед с рек и каналов уже ушел, запущены фонтаны города… Музеи еще закрыты. Что посмотреть?</p>
                 </article>
-              </acticle>
-
-              
+               </acticle>            
               <acticle class="article">
                 <img src="img/last-post2.jpg" alt="Yoga on the seaside" class="img article__img">
                 <article class="article__content">
@@ -142,7 +200,7 @@
             </main>
             <aside class="aside">
               <section class="aside__section new-posts">
-                <header class="__header"><h2>Новые посты</h2></header>
+                <header class="__header page__header"><h2>Новые посты</h2></header>
                 <article class="new-post">
                   <img class="new-post__img" src="img/2.jpg" alt="Man is walking on the beach">
                   <div class="new-post__content">
@@ -200,22 +258,22 @@
                 </article>
               </section>
               <form class="aside__section search">
-                <label>
-                  <input type="text" class="input__field search__field" placeholder="Найти..." required>
+                <label class="search__label">
+                  <input type="text" class="__field search__field" placeholder="Найти..." required>
                   <span class="visually-hidden-input">Поле поиска</span>
                 </label>
                 <button class="button search__button"><span class="visually-hidden-input">Кнопка поиска</span></button>
               </form>
               <form class="aside__section subscription">
-                <header class="__header"><h2>Рассылка</h2></header>
+                <header class="__header page__header"><h2>Рассылка</h2></header>
                 <label>
-                  <input type="email" class="input__field subscription__field" placeholder="Ваш email-адрес" required>
+                  <input type="email" class="__field subscription__field" placeholder="Ваш email-адрес" required>
                   <span class="visually-hidden-input">Поле ввода email для подписки</span>
                 </label>
                 <button class="button subscription__button">Подписаться</button>
               </form>
               <section class="aside__section aside-tags">
-                <header class="__header"><h2>Теги</h2></header>
+                <header class="__header page__header"><h2>Теги</h2></header>
                 <ul class="aside-tags__content">
                     <li class="aside-tag__item">
                       <a class="link aside-tag__link" href="#0">
@@ -260,7 +318,7 @@
                   </ul>
               </section>
               <section class="aside__section aside-themes">
-                <header class="__header"><h2>Темы</h2></header>
+                <header class="__header page__header"><h2>Темы</h2></header>
                 <ul class="aside-themes__content">
                     <li class="aside-theme">
                       <a class="link theme__link" href="#0">Красота</a>
@@ -289,44 +347,100 @@
                   </ul>
               </section>
             </aside>
-            
-            <aside class="aside ">
-              <section class="shop">
-                  <header class="__header"><h2>Наши изделия</h2></header>
-                  <div class="shop__items">
-                      <article class="item">
-                          <picture class="item__picture">
-                              <source media="(min-width: 1201px)" srcset="img/shop-item-desk1.jpg">
-                              <source media="(min-width: 641px)" srcset="img/shop-item-tablet1.jpg">
-                              <img class="item__img" src="img/shop-item-mobile1.jpg" alt="Pillow">
-                          </picture>
-                          
-                          <div class="item__content">
-                              <header class="item__header">
-                                  <a class="link item-header__link" href="#0"><h3>Подушки на диван</h3></a>
-                              </header>
-                              <span class="item__info">Набор из двух подушек с модными принтами. Видео о создании <a href="" class="item__link">здесь</a>.</span>
-                              <div class="item__container">
-                                <div class="item__prices">
-                                    <span class="item__price item__price_old">
-                                        <span class="item__price-value">1000</span>
-                                        <span class="item__rub">₽</span>
-                                      </span>
-                                      <span class="item__price">
-                                        <span class="item__price-value">800</span>
-                                        <span class="item__rub">₽</span>
-                                      </span>
-                                </div>
-                                <button class="button item__button">В магазин</button>
-                              </div>
-                          </div>
-
-                      </article>
-                  </div>
-              </section>  
-            </aside>
         </div>
           
+        <aside class="aside_down">
+          <section class="shop">
+              <header class="__header page__header"><h2>Наши изделия</h2></header>
+              <div class="shop__items">
+                  <article class="item">
+                      <picture class="item__picture">
+                          <source media="(min-width: 1201px)" srcset="img/shop-item-desk1.jpg">
+                          <source media="(min-width: 641px)" srcset="img/shop-item-tablet1.jpg">
+                          <img class="item__img" src="img/shop-item-mobile1.jpg" alt="Pillow">
+                      </picture>
+                      
+                      <div class="item__content">
+                          <header class="item__header">
+                              <a class="link item-header__link" href="#0"><h3>Подушки на диван</h3></a>
+                          </header>
+                          <span class="item__info">Набор из двух подушек с модными принтами. Видео о создании <a href="" class="item__link">здесь</a>.</span>
+                          <div class="item__price-container">
+                            <div class="item__prices">
+                                <span class="item__price item__price_old">
+                                    <span class="item__price-value">1000</span>
+                                    <span class="item__rub">₽</span>
+                                  </span>
+                                  <span class="item__price">
+                                    <span class="item__price-value">800</span>
+                                    <span class="item__rub">₽</span>
+                                  </span>
+                            </div>
+                            <button class="button item__button">В магазин</button>
+                          </div>
+                      </div>
+                  </article>
+                  
+                  <article class="item">
+                        <picture class="item__picture">
+                          <source media="(min-width: 1201px)" srcset="img/shop-item-desk2.jpg">
+                          <source media="(min-width: 641px)" srcset="img/shop-item-tablet2.jpg">
+                          <img class="item__img" src="img/shop-item-mobile2.jpg" alt="Pillow">
+                        </picture>
+                      
+                        <div class="item__content">
+                          <header class="item__header">
+                              <a class="link item-header__link" href="#0"><h3>Кукла "Зайчик"</h3></a>
+                          </header>
+                          <span class="item__info">Интерьерная рукодельная кукла "Зайчик", созданию которой посвящена <a href="" class="item__link">весенняя серия постов</a> в блоге и несколько подкастов.</span>
+                          <div class="item__price-container">
+                            <div class="item__prices">
+                                <span class="item__price item__price_old __hidden">
+                                    <span class="item__price-value">1000</span>
+                                    <span class="item__rub">₽</span>
+                                  </span>
+                                  <span class="item__price">
+                                    <span class="item__price-value">3500</span>
+                                    <span class="item__rub">₽</span>
+                                  </span>
+                            </div>
+                            <button class="button item__button">В магазин</button>
+                          </div>
+                        </div>
+                </article>
+
+                <article class="item">
+                    <picture class="item__picture">
+                        <source media="(min-width: 1201px)" srcset="img/shop-item-desk3.jpg">
+                        <source media="(min-width: 641px)" srcset="img/shop-item-tablet3.jpg">
+                        <img class="item__img" src="img/shop-item-mobile3.jpg" alt="Pillow">
+                    </picture>
+                    
+                    <div class="item__content">
+                        <header class="item__header">
+                            <a class="link item-header__link" href="#0"><h3>Шестиугольная рамка</h3></a>
+                        </header>
+                        <span class="item__info">Необычная рамка для украшения дома из видео <a href="" class="item__link">"Как сделать рамку из подручных средств за 30 минут"</a></span>
+                        <div class="item__price-container">
+                          <div class="item__prices">
+                              <span class="item__price item__price_old">
+                                  <span class="item__price-value">500</span>
+                                  <span class="item__rub">₽</span>
+                                </span>
+                                <span class="item__price">
+                                  <span class="item__price-value">400</span>
+                                  <span class="item__rub">₽</span>
+                                </span>
+                          </div>
+                          <button class="button item__button">В магазин</button>
+                        </div>
+                    </div>
+                </article>
+                
+              </div>
+          </section>  
+        </aside>
+
         <footer class="footer">
 
             <section class="socials">
@@ -362,5 +476,40 @@
         </footer>
     </page>
 
+    <div class="popup __hidden">
+      <div class="popup__container">
+        <div class="popup__content">
+          <header class="__header popup__header"><h2>Ваш фидбек</h2></header>
+          <form class="popup__form popup_frequency">
+            <label class="popup__label" for="frequency">Как часто вы заходите на сайт?</label>
+            <select class="frequency select__field __field">
+                  <option value="everyday" selected>Почти каждый день</option>
+                  <option value="per-day">Раз в несколько дней</option>
+                  <option value="per-week">Раз в несколько недель</option>
+                  <option value="per-year">Несколько раз в год</option>
+            </select> 
+          </form>
+          <form class="popup__form popup_subscription">
+            <label class="popup__label">Вы подписаны на e-mail рассылку?</label>
+            <div class="popup__radio">
+              <label class="radio-group">
+                <input type="radio" class="radio" name="radio-group">
+                <span class="radio-group-text">Да</span>
+              </label>
+              <label class="radio-group">
+              <input type="radio" class="radio" name="radio-group">
+              <span class="radio-group-text">Нет</span>
+              </label>
+            </div>
+          </form>
+          <form class="popup__form popup_tellus">
+            <label class="popup__label" for="tellus">Расскажите, какой контент вы хотели бы видеть на нашем сайте?</label>
+            <textarea class="tellus textarea" placeholder="Может, больше рецептов?" required></textarea>
+          </form>
+          <button class="button popup__button">Отправить</button>                   
+        </div>
+        <div class="popup__close"><span class="visually-hidden-input">Закрыть окно</span></div>
+      </div>
+      </div>
 </body>
 </html>
