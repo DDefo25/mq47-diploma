@@ -12,6 +12,9 @@
 body {
     font-family: OpenSans, sans-serif;
     box-sizing: border-box;
+
+    overflow-y: auto;
+    overflow-x: hidden;
     
     margin: 0;
     padding: 0;
@@ -40,6 +43,10 @@ p {
 
 .link {
     text-decoration: none;
+}
+
+.page {
+
 }
 
 .welcome {
