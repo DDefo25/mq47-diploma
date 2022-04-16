@@ -735,6 +735,18 @@ main {
     overflow: hidden;
 }
 
+@media (orientation:landscape), (min-width: 641px) {
+    .trends__container {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .trend {
+        box-sizing: border-box;
+        width: calc(100%/2 - 1.5px);
+    }
+}
+
 
 @media (min-width: 641px) {
 
@@ -775,16 +787,6 @@ main {
 
     .trends {
         margin-bottom: 50px;
-    }
-    
-    .trends__container {
-        flex-direction: row;
-        flex-wrap: wrap;
-    }
-
-    .trend {
-        box-sizing: border-box;
-        width: calc(100%/2 - 1.5px);
     }
 
     .trend__header-link {
@@ -858,6 +860,12 @@ main {
 
 }
 
+@media (orientation: landscape) and (min-width: 641px), (min-width: 1200px) {
+    .trend {
+        width: calc(100%/4 - 2.25px);
+    }
+}
+
 @media (min-width: 1200px) {
 
     .page {
@@ -915,10 +923,6 @@ main {
         margin: 0 auto;
 
         line-height: 3em;
-    }
-
-    .trend {
-        width: calc(100%/4 - 2.25px);
     }
 
     .trend__header {
