@@ -202,9 +202,11 @@ p {
 }
 
 .trend__tags {
-    display: flex;
     margin-bottom: 10px;
     gap: 20px;
+
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .tag-link {
@@ -219,7 +221,7 @@ p {
 }
 
 .trend__header {
-    width: calc(3/4*100%);
+    word-wrap: break-word;
 }
 
 .trend__header-link {
@@ -602,11 +604,14 @@ main {
 }
 
 .copyright-info {
+    text-align: center;
+    margin-bottom: 48px;
+}
+
+.copyright-info__link {
     font-size: 0.9em;
     font-weight: bold;
     color: #a9a9a9;
-    text-align: center;
-    margin-bottom: 48px;
 }
 
 .popup {
@@ -685,6 +690,8 @@ main {
     border: none;
     padding: 1.5em 1.5em;
     min-height: 140px;
+
+    resize: none;
     
     background-color: #f4f7f6;
 }
@@ -818,6 +825,7 @@ main {
     }
 
     .aside {
+        min-width: 272px;
         max-width: 272px;
     }
     
@@ -863,7 +871,7 @@ main {
 
 }
 
-@media (orientation: landscape) and (min-width: 641px), (min-width: 1200px) {
+@media (orientation: landscape) and (min-width: 641vw), (min-width: 1200px) {
     .trend {
         width: calc(100%/4 - 2.25px);
     }
