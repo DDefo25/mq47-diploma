@@ -879,10 +879,6 @@ main {
 
 @media (min-width: 1200px) {
 
-    .page {
-        max-width: 1200px;
-    }
-
     .welcome {
         font-size: 22.5px;
 
@@ -983,7 +979,7 @@ main {
     }
 
     .aside_down {
-        max-width: inherit;
+        max-width: 1200px;
 
         padding-left: 40px;
         padding-right: 40px;
@@ -1003,7 +999,7 @@ main {
     }
 
     .footer {
-        max-width: inherit;
+        max-width: 1200px;
 
         padding-left: 15px;
         padding-right: 15px;
