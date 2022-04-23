@@ -12,11 +12,11 @@
         <header class="welcome">
           <div class="welcome__container">
             <div class="welcome__header">
-              <button class="menu" type="button"><span class="visually-hidden">Меню</span>
+              <div class="menu"><a href="#0" class="visually-hidden">Меню</a>
                 <div class="menu__line"></div>
                 <div class="menu__line"></div>
                 <div class="menu__line"></div>
-              </button>
+              </div>
               <a href="#0" class="link welcome__logo-link">
                 <img src="svg/noemi-logo.svg" alt="NOEMI" class="welcome__logo">
               </a>
@@ -42,9 +42,9 @@
               </ul>
             </div>
             
-            <span class="welcome__title">
+            <div class="welcome__title">
               <h1>Блог о творчестве, спорте, и образе жизни</h1>
-            </span>
+            </div>
           </div>
 
         </header>
@@ -98,8 +98,8 @@
           </div>
         </aside>
 
-        <div class="page__content">
-            <main class="main">
+        <main class="page__content">
+            <section class="page__articles">
               <acticle class="article">
                 <img src="img/last-post1.jpg" alt="Man is walking on the beach" class="img article__img">
                 <article class="article__content">
@@ -197,7 +197,7 @@
                 </article>
               </acticle>
 
-            </main>
+            </section>
             <aside class="aside">
               <section class="aside__section new-posts">
                 <header class="__header page__header"><h2>Новые посты</h2></header>
@@ -347,7 +347,7 @@
                   </ul>
               </section>
             </aside>
-        </div>
+          </main>
           
         <aside class="aside_down">
           <section class="shop">
@@ -476,12 +476,12 @@
         </footer>
       </div>
 
-    <div class="popup">
+    <div class="popup __hidden">
       <div class="popup__container">
         <div class="popup__content">
           <header class="__header popup__header"><h2>Ваш фидбек</h2></header>
           <form class="popup__form popup_frequency">
-            <label class="popup__label" for="frequency">Как часто вы заходите на сайт?</label>
+            <label class="popup__label">Как часто вы заходите на сайт?</label>
             <select class="frequency select__field __field">
                   <option value="everyday" selected>Почти каждый день</option>
                   <option value="per-day">Раз в несколько дней</option>
@@ -503,7 +503,7 @@
             </div>
           </form>
           <form class="popup__form popup_tellus">
-            <label class="popup__label" for="tellus">Расскажите, какой контент вы хотели бы видеть на нашем сайте?</label>
+            <label class="popup__label">Расскажите, какой контент вы хотели бы видеть на нашем сайте?</label>
             <textarea class="tellus textarea" placeholder="Может, больше рецептов?" required></textarea>
           </form>
           <button class="button popup__button">Отправить</button>                   
